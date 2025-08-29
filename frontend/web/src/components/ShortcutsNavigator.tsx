@@ -52,6 +52,14 @@ const ShortcutsNavigator = () => {
           <span className="max-w-[8rem] truncate font-normal">{tag}</span>
         </button>
       ))}
+      <button
+        style={{
+          fontWeight: 550,
+          color: "red"
+        }}
+      >
+        PT Warna Warni Media
+      </button>
     </div>
   );
 };
