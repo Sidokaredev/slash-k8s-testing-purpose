@@ -9,10 +9,8 @@ pipeline {
             }
         }
         stage('staging') {
-            steps{
-                step {
-                    sh(script: 'kubectl get pods -A')
-                }
+            steps {
+                sh(script: 'kubectl get pods -A')
             }
         }
     }
