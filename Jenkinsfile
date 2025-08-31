@@ -3,12 +3,12 @@ pipeline {
         label 'jnlp-with-docker'
     }
     stages {
-        stage(name: 'build') {
+        stage('build') {
             steps {
                 echo 'Hello World'
             }
         }
-        stage(name: 'staging') {
+        stage('staging') {
             steps{
                 step {
                     sh(script: 'kubectl get pods -A')
